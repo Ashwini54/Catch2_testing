@@ -28,8 +28,7 @@ jobs:
 #       run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
 
     - name: Build
-      run: ls && sudo cmake -Bbuild -H. -DBUILD_TESTING=OFF && sudo cmake --build build/ --target install 
-#       && cd examples && ls && g++ 020-TestCase-1.cpp && ls &&  
+      run: ls && sudo cmake -Bbuild -H. -DBUILD_TESTING=OFF && sudo cmake --build build/ --target install && cd examples && ls && g++ 020-TestCase-1.cpp && ls &&  
       # Build your program with the given configuration
 #       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
 
